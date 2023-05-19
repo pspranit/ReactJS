@@ -1,0 +1,55 @@
+WITH JSX(javascript + xml)
+
+import React,from 'react'
+
+function app()
+{
+    return(
+        <div>
+        <h1>Hello world</h1>
+        </div>
+    )
+}export default app
+********************************************************************
+
+WITHOUT JSX
+
+import React.from 'react'
+function app()
+{
+    return{
+        React.CreateElement('div',{id:'div'},<h1>Hello world</h1>)
+        )
+    }
+}export default app
+********************************************************************
+
+html            JSX
+for           htmlfor
+onclick       OnClick
+class         classname
+<br>
+<img>         <img></img>
+*******************************************************************
+
+PROPS
+
+            Component
+    
+    Functional              class
+
+    1)Easy                 1)Difficult
+    2)Absence of this,     2)Present
+    super,constructor,
+    render,lifeCycle
+
+    props                                     state
+
+    immutable                                mutable
+    calling from parent to child           same component itself
+    HOOKS                                   1>constructor
+        1>use state                         2>super
+        2>use effect                        3>this
+        3>use layout effect                 4>return
+        4>use ret                           5>life cycle
+        5>use context
